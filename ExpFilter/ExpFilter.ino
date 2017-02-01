@@ -12,7 +12,7 @@ unsigned long ADCfiltered=1; //default to 0V
 
 //the filtered value converted to a voltage:
 //adcFiltered ranges from 0-1023 corresponding to a voltage between 0 and adcMAXvoltage
-static float adcMAXvoltage = 5; //5V for arduino uno, 3,3V for some nodeMCU boards, 1V for others.
+static float adcMAXvoltage = 5; //5V for arduino uno, 3,1V for some nodeMCU boards (like the D1 mini), 1V for others (like the adafruit Huzzar).
 float vADC=0; //converted value of adcFiltered
 
 
