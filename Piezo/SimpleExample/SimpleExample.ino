@@ -1,35 +1,20 @@
-/* Knock Sensor
- * ----------------
- *
- * Program using a Piezo element as if it was a knock sensor.
- *
- * We have to basically listen to an analog pin and detect 
- * if the signal goes over a certain threshold. It writes
- * "knock" to the serial port if the Threshold is crossed,
- * and toggles the LED on pin 13.
- *
- * (cleft) 2005 D. Cuartielles for K3
- * edited by Scott Fitzgerald 14 April 2013
- */
+// super simple piezo sound example - makes an alarm clock like pattern
 
-int ledPin = 13;
-int knockSensor = 0;               
-byte val = 0;
-int statePin = LOW;
-int THRESHOLD = 100;
+int piezoPin = 5; // the pin where the piezo (+) wire is connected to
 
-void setup() {
- pinMode(ledPin, OUTPUT); 
- Serial.begin(9600);
+void setup(){
+  // stub method
 }
 
-void loop() {
-  val = analogRead(knockSensor);     
-  if (val >= THRESHOLD) {
-    statePin = !statePin;
-    digitalWrite(ledPin, statePin);
-    Serial.println("Knock!");
+void loop(){
+  tone(piezoPin, 440, 200); // play a tone at 440hz for 200ms on the piezoPin
+  delay(500); // wait 500ms - which gives us a 300ms break between tones
 
-  }
-  delay(100);  // we have to make a delay to avoid overloading the serial port
+  // when using the tone() method without duration we need to call noTone after playing
+  // the below code yields the same result as the two lines above
+  tone(piezoPin, 440);
+  delay(200); // ms
+  noTone(piezoPin);
+  delay(300); // ms - break between tones
 }
+
