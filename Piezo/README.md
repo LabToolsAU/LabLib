@@ -14,7 +14,7 @@ tone(pin, frequency, duration);
 ### Setup
 
 #### Hardware (Wiring)
-![Piezo and Arduino Uno](http://zebweb.dk/lablibimg/piezo_pin5.png =200px)
+<img src="http://zebweb.dk/lablibimg/piezo_pin5.png" width="200">
 
 Wire the piezo element up to the Arduino Uno as pictured above
 The Piezo + wire (red) is wired to pin 5, and - (blue) to GND
@@ -53,7 +53,7 @@ A more detailed example and explanation can be found at https://www.arduino.cc/e
 
 #### Hardware (wiring)
 
-![Piezo as input on A5](http://zebweb.dk/lablibimg/piezo_input.png =200px)
+<img src="http://zebweb.dk/lablibimg/piezo_input.png" width="200">
 
 Note the resistor (1M) between the analog input A5 and GND, this serves to pull down the value when the piezo is not being tapped or knocked. Smaller resistance can be used but will require more force, so just stick with 1M
 
