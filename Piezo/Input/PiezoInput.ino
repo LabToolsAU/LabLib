@@ -17,5 +17,5 @@ void loop() {
   if(piezoIn > 50){
     Serial.println("Knock");
   }
-  delay(100);
+  delay(20); // 20ms delay
 }

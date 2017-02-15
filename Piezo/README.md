@@ -55,7 +55,7 @@ A more detailed example and explanation can be found at https://www.arduino.cc/e
 
 <img src="http://zebweb.dk/lablibimg/piezo_input.png" width="200">
 
-Note the resistor (1M) between the analog input A5 and GND, this serves to pull down the value when the piezo is not being tapped or knocked. Smaller resistance can be used but will require more force, so just stick with 1M
+Note the resistor (1M) between the analog input A5 and GND, this zeroes the input value when the piezo is not being tapped or knocked. Smaller resistance can be used but will require more force, so just stick with 1M
 
 #### Software
 We read the analog value and react, as shown in [the input example](Input/PiezoInput.ino) sketch.
