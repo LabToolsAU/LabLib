@@ -20,10 +20,10 @@ The FSR is connected to 5v on the left (+) pin and to the arduino analog input (
 
 LabLib supplies two examples. 
 
-* [Simple FSR example](fsr.ino)
+* [Simple FSR example](FSR.ino)
 * [Simple FSR example using MedianFilter](MedianFsr.ino)
 
-The first example is the very basic way to read the input from the FSR and can be found in the [fsr.ino](fsr.ino) sketch. The second example [FsrMedian.ino](FsrMedian.ino) is basically the same example but using a median filter (introduced in [filtering](https://github.com/LabToolsAU/LabLib/tree/master/filtering))
+The first example is the very basic way to read the input from the FSR and can be found in the [FSR.ino](FSR.ino) sketch. The second example [FsrMedian.ino](FsrMedian.ino) is basically the same example but using a median filter (introduced in [filtering](https://github.com/LabToolsAU/LabLib/tree/master/filtering))
 
 The Median Filter is used to get consistent readings from the FSR (and is generally a good idea to use for anything reading from analog on the arduino). Often when using sensors to read you get errors, the median filter simply gives the median of the 5 latest readings and discards anything "out of the ordinary"
 
