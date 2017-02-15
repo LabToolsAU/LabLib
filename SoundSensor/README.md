@@ -28,4 +28,4 @@ The example [SoundSensor.ino](SoundSensor.ino) sketch can seem a bit daunting at
 
 This video showcases a demo using, basically the same code as the example code provided here - modified heavily to use neopixels to visualize the music being played. 
 
-[Electret Demo](http://zebweb.dk/liblabimg/electret.mp4)
+[Electret Demo](http://zebweb.dk/lablibimg/electret.mp4)
