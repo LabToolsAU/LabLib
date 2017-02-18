@@ -9,7 +9,7 @@ Libraries
 
 Get the [i2CdevLib from here](https://github.com/jrowberg/i2cdevlib/archive/master.zip).
 
-Extract the zip file somewhere temporary, you need 2 folders:
+Extract the zip file somewhere temporary, you need to dig out 2 folders:
 
 The EFM32/I2Cdev folder and the Arduino/MPU6050 folder.
 
@@ -35,8 +35,8 @@ As described here:
 
 You can of course choose to do something else than print it out... maybe even use an if statement?? :)
 
-2: printout of movement in 3 axes 
--------------------------------------
+2: printout of movement in 3 axes (NOT DONE YET)
+------------------------------------------------
 (Up/Down , Left/Right, Forward/Backward )
 
 Motion is determined as a jerk move above a certain threshold. (minimumJerk)
