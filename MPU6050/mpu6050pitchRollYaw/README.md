@@ -1,0 +1,1 @@
+This code looks really intimidating, but focus on the setup() and loop() functions and you should be fine.
