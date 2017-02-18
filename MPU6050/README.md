@@ -5,7 +5,10 @@ It can do a lot of really crazy calculations with positional data, so the code i
 1: printout of yaw, pitch, roll. 
 --------------------------------
 As described here:
+
 ![YAAAAAW!](http://doc.aldebaran.com/2-1/_images/rollPitchYaw.png "YPR")
+
+You can of course choose to do something else than print it out... maybe even use an if statement?? :)
 
 2: printout of movement in 3 axes 
 -------------------------------------
