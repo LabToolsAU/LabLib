@@ -111,8 +111,10 @@ void loop() {
 
     MPU6050_loop(); //inside this function the MPU6050 is read and data is stored in the orientation/motion vars
 
-    if(newHeading) //if data was read from the MPU6050 print out yaw, pitch, and roll, use tabs to keep data in same location i terminal, to ease reading.
+
+    if(newHeading) //if data was read from the MPU6050 (happens approx every 10mS) 
         {
+            //print out yaw, pitch, and roll, use tabs (\t) to keep data in same location in terminal, to ease reading.
             Serial.print("Yaw: ");
             Serial.print(yaw); //YAW in degrees.
             Serial.print("\t\t");
@@ -127,7 +129,7 @@ void loop() {
 
             Serial.println(); //newline
 
-            newHeading=false;
+            newHeading=false; //clear the flag
            
         }
 
@@ -244,10 +246,10 @@ static inline void MPU6050_loop(){
             mpu.dmpGetGravity(&gravity, &q);
             mpu.dmpGetYawPitchRoll(ypr, &q, &gravity);
 
+
+            //From radians to degrees:
             yaw=ypr[0] * 180/M_PI;
-
             pitch=ypr[1] * 180/M_PI;
-
             roll=ypr[2] * 180/M_PI;
 
 //            Serial.print("ypr\t");
@@ -257,7 +259,7 @@ static inline void MPU6050_loop(){
 //            Serial.print("\t");
 //            Serial.println(ypr[2] * 180/M_PI);
      
-        newHeading=true;
+        newHeading=true; //set the flag
         
         // blink LED to indicate activity
         blinkState = !blinkState;
