@@ -56,6 +56,9 @@ The calibration sketch has a howto guide in the comments of the sketch, but it w
     mpu.setXGyroOffset(-133);
     mpu.setYGyroOffset(132);
     mpu.setZGyroOffset(122);
+    
+    mpu.setXAccelOffset(-1488);
+    mpu.setYAccelOffset(-51);
     mpu.setZAccelOffset(1413); 
 ```
 
