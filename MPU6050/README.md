@@ -13,7 +13,7 @@ Extract the zip file somewhere temporary, you need to dig out 2 folders from the
 
 The I2Cdev folder and the MPU6050 folder.
 
-'''Beware that there are several I2Cdev folders in the zip file. You specifically need to get the one in the Arduino subfolder!'''
+**Beware that there are several I2Cdev folders in the zip file. _You specifically need to get the one in the Arduino subfolder!_**
 
 Put these in your Arduino libraries folder.
 
