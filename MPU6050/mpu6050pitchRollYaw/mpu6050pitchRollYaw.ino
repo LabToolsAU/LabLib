@@ -92,6 +92,7 @@ void setup() {
     MPU6050_setup();  //inlined to avoid confusion
     }
 
+long oldTimestamp=0;
 
 
 void loop() {
@@ -112,21 +113,32 @@ void loop() {
 
     MPU6050_loop(); //inside this function the MPU6050 is read and data is stored in the orientation/motion vars
 
-    if(newHeading) //if data was read from the MPU6050 print out yaw, pitch, and roll
+    if(newHeading) //if data was read from the MPU6050 print out yaw, pitch, and roll, use tabs to keep data in same location i terminal, to ease reading.
         {
+            long newTimeStamp=millis();
             Serial.print("Yaw: ");
             Serial.print(yaw); //YAW in degrees.
-            Serial.println(" degrees");
+            Serial.print("\t\t");
             
             Serial.print("Pitch: ");
             Serial.print(pitch); //Pitch in degrees.
-            Serial.println(" degrees");
+            Serial.print("\t\t");
 
             Serial.print("Roll: ");
             Serial.print(roll); //Roll in degrees.
-            Serial.println(" degrees");
+            Serial.print("\tdegrees.\t");
+
+            Serial.print("T:");
+            Serial.print(newTimeStamp); //timestamp, to see how fast the thing is..
+
+            Serial.print("\tdt:");
+            Serial.print(newTimeStamp-oldTimestamp);
+
+            Serial.println();
 
             newHeading=false;
+
+            oldTimestamp=newTimeStamp;
 
         }
 
@@ -245,7 +257,7 @@ static inline void MPU6050_loop(){
 
             yaw=ypr[0] * 180/M_PI;
 
-            pitch=ypr[0] * 180/M_PI;
+            pitch=ypr[1] * 180/M_PI;
 
             roll=ypr[2] * 180/M_PI;
 
