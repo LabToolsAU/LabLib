@@ -63,11 +63,7 @@ uint8_t fifoBuffer[64]; // FIFO storage buffer
 
 // orientation/motion vars
 Quaternion q;           // [w, x, y, z]         quaternion container
-VectorInt16 aa;         // [x, y, z]            accel sensor measurements
-VectorInt16 aaReal;     // [x, y, z]            gravity-free accel sensor measurements
-VectorInt16 aaWorld;    // [x, y, z]            world-frame accel sensor measurements
 VectorFloat gravity;    // [x, y, z]            gravity vector
-float euler[3];         // [psi, theta, phi]    Euler angle container
 float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
 
 float yaw;
@@ -207,8 +203,8 @@ static inline void MPU6050_setup(){
     // configure LED for output
     pinMode(LED_PIN, OUTPUT);
 
-    // if programming failed, don't try to do anything
-    if (!dmpReady) {Serial.println("failed to program the MPU.. you shoud reboot"); while(1);}
+// if programming failed, don't try to do anything, just repeat an error message.
+    if (!dmpReady) {while(1){Serial.println("failed to program the MPU.. you should check your connections and retry"); delay(1000);}}
 
 
 }
@@ -241,7 +237,7 @@ static inline void MPU6050_loop(){
         fifoCount -= packetSize;
 
         
-            // display Euler angles in degrees
+            // Get appropriate values.
             mpu.dmpGetQuaternion(&q, fifoBuffer);
             mpu.dmpGetGravity(&gravity, &q);
             mpu.dmpGetYawPitchRoll(ypr, &q, &gravity);
