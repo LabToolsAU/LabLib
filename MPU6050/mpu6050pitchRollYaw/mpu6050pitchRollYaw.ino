@@ -125,7 +125,7 @@ void loop() {
             Serial.print(roll); //Roll in degrees.
             Serial.print("\tdegrees.");
 
-            Seria.println(); //newline
+            Serial.println(); //newline
 
             newHeading=false;
            
