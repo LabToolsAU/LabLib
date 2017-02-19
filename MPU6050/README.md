@@ -37,8 +37,7 @@ You can of course choose to do something else than print it out... maybe even us
 
 2: printout of movement in 3 axes (NOT DONE YET)
 ------------------------------------------------
-Up/Down , Left/Right , Forward/Backward
-(Z+/Z-) ,   (Y+/Y-)  ,     (X+/X-)
+Up/Down (Z+/Z-) , Left/Right (Y+/Y-), Forward/Backward (X+/X-)
 
 Motion is determined as a jerk move above a certain threshold. (minimumJerk)
 
