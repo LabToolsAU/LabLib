@@ -9,9 +9,11 @@ Libraries
 
 Get the [i2CdevLib from here](https://github.com/jrowberg/i2cdevlib/archive/master.zip).
 
-Extract the zip file somewhere temporary, you need to dig out 2 folders:
+Extract the zip file somewhere temporary, you need to dig out 2 folders from the Arduino subfolder:
 
-The EFM32/I2Cdev folder and the Arduino/MPU6050 folder.
+The I2Cdev folder and the MPU6050 folder.
+
+'''Beware that there are several I2Cdev folders in the zip file. You specifically need to get the one in the Arduino subfolder!'''
 
 Put these in your Arduino libraries folder.
 
