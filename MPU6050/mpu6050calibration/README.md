@@ -31,6 +31,9 @@ As will have been shown in interspersed header lines, the six groups making up t
     mpu.setXGyroOffset(-133);
     mpu.setYGyroOffset(132);
     mpu.setZGyroOffset(122);
+    
+    mpu.setXAccelOffset(-1488);
+    mpu.setYAccelOffset(-51);
     mpu.setZAccelOffset(1413); 
 ```
 
