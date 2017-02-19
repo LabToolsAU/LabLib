@@ -3,7 +3,7 @@ Why?
 
 Running this calibration will greatly increase the accuracy and reliability of your MPU6050 module.
 
-**You should do this for sensor module that you have and _somehow_ keep note of which module has which offsets.**
+**You should do this for _each_ sensor module that you have and _somehow_ keep note of which module has which offsets.**
 
 How?
 ====
@@ -12,8 +12,8 @@ Snatched from the comment in the ino file:
 ------------------------------------------
 
 1. Put the MPU6050 in a flat and horizontal surface, and leave it operating for 5-10 minutes so its temperature gets stabilized. **Tape it so it doesn't move**
-2: Run this program.  A "----- done -----" line will indicate that it has done its best. With the current accuracy-related constants (NFast = 1000, NSlow = 10000), it will take a few minutes to get there.
-3: Along the way, it will generate a dozen or so lines of output, showing that for each of the 6 desired offsets, it is 
+2. Run this program.  A "----- done -----" line will indicate that it has done its best. With the current accuracy-related constants (NFast = 1000, NSlow = 10000), it will take a few minutes to get there.
+3. Along the way, it will generate a dozen or so lines of output, showing that for each of the 6 desired offsets, it is 
   * first, trying to find two estimates, one too low and one too high, and
   * then, closing in until the bracket can't be made smaller.
 
