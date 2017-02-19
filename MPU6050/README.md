@@ -9,13 +9,13 @@ Libraries
 
 Get the [i2CdevLib from here](https://github.com/jrowberg/i2cdevlib/archive/master.zip).
 
-Extract the zip file somewhere temporary, you need to dig out 2 folders from the Arduino subfolder:
+Extract the zip file somewhere temporary, you need to dig out 2 folders from the **Arduino _subfolder_**:
 
-The I2Cdev folder and the MPU6050 folder.
+The **I2Cdev** folder and the **MPU6050** folder.
 
 **Beware that there are several I2Cdev folders in the zip file. _You specifically need to get the one in the Arduino subfolder!_**
 
-Put these in your Arduino libraries folder.
+Put these in your [Arduino libraries folder](https://www.arduino.cc/en/Guide/Libraries#toc5).
 
 Connecting to the Uno
 ---------------------
