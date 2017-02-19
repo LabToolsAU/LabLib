@@ -29,24 +29,24 @@ The examples we have provided
 
 The MPU6050 can do a lot of really crazy calculations with positional data, so the code in these examples can get pretty intimidating. We have tried simplifying it by placing all the nasty code somewhere out of sight, and split the usage of the device into two examples that shold cover a pretty wide range of use cases:
 
-1: printout of yaw, pitch, roll. 
---------------------------------
+1: **mpu6050pitchRollYaw:** printout of yaw, pitch, roll. 
+---------------------------------------------------------
 As described here:
 
 ![YAAAAAW!](http://doc.aldebaran.com/2-1/_images/rollPitchYaw.png "YPR")
 
 You can of course choose to do something else than print it out... maybe even use an if statement?? :)
 
-2: printout of movement in 3 axes (semi stable)
------------------------------------------------
+2: **mpu6050Jerk:** printout of movement in 3 axes (semi stable)
+----------------------------------------------------------------
 Up/Down (Z+/Z-) , Left/Right (Y+/Y-), Forward/Backward (X+/X-)
 
 Motion is determined as a jerk move above a certain threshold. (minimumJerk)
 
 
 
-Precision?
-----------
+Precision? (**mpu6050calibration**)
+-----------------------------------
 
 Each MPU6050 has it own specific calibration values. The sensor works with a default calibration, but better results are achieved after a calibration on your own hardware in order to get offsets for your individial unit. 
 
