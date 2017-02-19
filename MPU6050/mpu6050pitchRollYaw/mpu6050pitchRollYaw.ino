@@ -162,16 +162,14 @@ static inline void MPU6050_setup(){
 //    XAccel                      YAccel                ZAccel                           XGyro                     YGyro           ZGyro    
 // [-1489,-1488] --> [-36,1]  [-51,-50] --> [-17,6]   [1413,1413] --> [16374,16392]   [-134,-133] --> [0,3]   [132,132] --> [0,2] [122,123] --> [0,5]
     
-/*
-    mpu.setXGyroOffset(220);
-    mpu.setYGyroOffset(76);
-    mpu.setZGyroOffset(-85);
-    mpu.setZAccelOffset(1788); // 1688 factory default for my test chip
-*/
+
     mpu.setXGyroOffset(-133);
     mpu.setYGyroOffset(132);
     mpu.setZGyroOffset(122);
-    mpu.setZAccelOffset(1413); 
+    
+    mpu.setXAccelOffset(-1488);
+    mpu.setYAccelOffset(-51);
+    mpu.setZAccelOffset(1413);
 
     // make sure it worked (returns 0 if so)
     if (devStatus == 0) {
