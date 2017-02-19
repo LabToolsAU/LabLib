@@ -50,7 +50,7 @@ Precision? (**mpu6050calibration**)
 
 Each MPU6050 has it own specific calibration values. The sensor works with a default calibration, but better results are achieved after a calibration on your own hardware in order to get offsets for your individial unit. 
 
-The calibration sketch has a howto guide in the comments of the sketch, but it will basically output 4 values that can be put into the setOffset parts of the sketches in the first and second examples eg:
+The calibration sketch has a howto guide in the comments of the sketch, but it will basically output 4 values that can be put into the setOffset parts in the MPU6050_setup() functions in the sketches in the first and second examples eg the lines that go:
 
 ```c++
     mpu.setXGyroOffset(-133);
