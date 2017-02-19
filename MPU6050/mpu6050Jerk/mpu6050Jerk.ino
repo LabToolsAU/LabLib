@@ -181,9 +181,13 @@ static inline void MPU6050_setup(){
     mpu.setZGyroOffset(-85);
     mpu.setZAccelOffset(1788); // 1688 factory default for my test chip
 */
+
     mpu.setXGyroOffset(-133);
     mpu.setYGyroOffset(132);
     mpu.setZGyroOffset(122);
+    
+    mpu.setXAccelOffset(-1488);
+    mpu.setYAccelOffset(-51);
     mpu.setZAccelOffset(1413); 
 
     // make sure it worked (returns 0 if so)
