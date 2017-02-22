@@ -20,9 +20,9 @@ Sparkfun has an excellent tutorial for mounting loadcells [here](https://learn.s
 Calibration
 -----------
 
-*Get something with a known weight (10-100grams).
+* Get something with a known weight (10-100grams).
 
-*Upload the loadCellCalibration.ino sketch to your arduino, open the serial monitor and follow the guide.
+* Upload the loadCellCalibration.ino sketch to your arduino, open the serial monitor and follow the guide.
 
 
 It calibrates the scale following these points:
