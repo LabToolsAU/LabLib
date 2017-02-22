@@ -43,3 +43,11 @@ Running
 -------
 
 loadCell.ino contains the code needed to measure the weight of an object and print the weight to the serial monitor. Modify the code to your needs.
+
+
+More?
+-----
+
+Additional settings, like offset and tareing can be found in the HX711SerialBegin.ino example in the HX711 library that you downloaded and put in your arduino libraries folder.
+
+A lot more info about load cells (and strain gauges) is available at [sparkfun](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)
