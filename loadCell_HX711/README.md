@@ -17,10 +17,14 @@ Mounting
 
 Sparkfun has an excellent tutorial for mounting loadcells [here](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide)
 
+There are also several instructables to seek out for inspiration...
+
+[This image](https://cdn.instructables.com/F4Q/FWBS/ISCBDSO4/F4QFWBSISCBDSO4.LARGE.jpg) from [here](http://www.instructables.com/id/Arduino-Load-Cell-Scale/) should give you an idea
+
 Calibration
 -----------
 
-* Get something with a known weight (10-100grams).
+* Get something with a known weight (100-1000grams).
 
 * Upload the loadCellCalibration.ino sketch to your arduino, open the serial monitor and follow the guide.
 
