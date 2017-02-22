@@ -1,7 +1,7 @@
 The HX711 amplifier is used to interface load cells
 =========================================
 
-Serial data is clocked out of the amplifier using two pins (clock and data).
+Serial data is clocked out of the amplifier using two pins (clock and data). Code in this folder is pretty much copy-pasted from [sparkfuns excellent loadcell code](https://github.com/sparkfun/HX711-Load-Cell-Amplifier)
 
 Getting started
 ---------------
@@ -24,10 +24,11 @@ There are also several instructables to seek out for inspiration...
 Calibration
 -----------
 
-* Get something with a known weight (100-1000grams).
+* Get something with a known weight (100-10000grams).
 
 * Upload the loadCellCalibration.ino sketch to your arduino, open the serial monitor and follow the guide.
 
+* Note the calibration factor and use this in your loadCell.ino sketch
 
 It calibrates the scale following these points:
 
