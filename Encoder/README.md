@@ -15,6 +15,8 @@ What?
 
 The code example instantiates a single encoder object, and reads either speed or position to the serial port. Toggle between speed and position readout by pushing the button.
 
+Use the [Serial Plotter](https://rheingoldheavy.com/new-arduino-serial-plotter/) (CTRL/CMD+SHIFT+L) for a nice visual representation of the encoder values. 
+
 How?
 =====
 
