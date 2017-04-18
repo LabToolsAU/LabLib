@@ -18,6 +18,8 @@ The code example instantiates a single encoder object, and reads either speed or
 How?
 =====
 
+Get the encoder library from [here](https://github.com/PaulStoffregen/Encoder/archive/master.zip), and unpack it in your [Arduino libraries folder](https://www.arduino.cc/en/Guide/Libraries#toc5).
+
 Hook up the encoder as follows:
 
 ![Hookup](encoder.png "Encoder_wiring")
