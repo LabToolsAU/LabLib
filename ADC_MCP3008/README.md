@@ -24,6 +24,7 @@ Get the MCP3008 library from [here](https://github.com/nodesign/MCP3008/archive/
 Hook up the ADC to an arduino UNO as follows:
 
 ![Hookup_uno](arduinoWiring.png "MCP3008_wiring")
+Use 5V and GND from the Uno as your sources for voltage dividers.
 
 
 Several ADCs can be connected to one arduino, edit the code to instantiate one ADC object per physical device. They can share the datapins, but need seperate CS (chip select) pins.
