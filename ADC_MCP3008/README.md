@@ -31,6 +31,8 @@ Several ADCs can be connected to one arduino, edit the code to instantiate one A
 If you're using the wemos D1mini (ESP8266) board, connect it like this, comment out the pin definitions for the uno, and uncomment the pin definitions for the D1 mini:
 ![Hookup_d1](D1_hookup.png "MCP3008_wiring_D1_mini")
 
+Use 3v3 and GND from the wemos as your sources for voltage dividers.
+
 
 Hooking up Sensors?
 ===================
