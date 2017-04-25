@@ -35,4 +35,6 @@ Most sensors that rely on a change in resistance need to be coupled as voltage d
 BONUS
 =====
 [MCP3008 Datasheet](https://stevieb9.github.io/rpi-adc-mcp3008/datasheet/MCP3008.pdf)
+
+
 [Purchase an MCP3008 from farnell](http://dk.farnell.com/microchip/mcp3008-i-p/10bit-adc-2-7v-8ch-spi-16dip/dp/1627174)
