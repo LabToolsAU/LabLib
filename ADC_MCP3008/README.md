@@ -21,11 +21,16 @@ How?
 
 Get the MCP3008 library from [here](https://github.com/nodesign/MCP3008/archive/master.zip), and unpack it in your [Arduino libraries folder](https://www.arduino.cc/en/Guide/Libraries#toc5).
 
-Hook up the ADC as follows:
+Hook up the ADC to an arduino UNO as follows:
 
-![Hookup](arduinoWiring.png "MCP3008_wiring")
+![Hookup_uno](arduinoWiring.png "MCP3008_wiring")
+
 
 Several ADCs can be connected to one arduino, edit the code to instantiate one ADC object per physical device. They can share the datapins, but need seperate CS (chip select) pins.
+
+If you're using the wemos D1mini (ESP8266) board, connect it like this, comment out the pin definitions for the uno, and uncomment the pin definitions for the D1 mini:
+![Hookup_d1](D1_hookup.png "MCP3008_wiring_D1_mini")
+
 
 Hooking up Sensors?
 ===================

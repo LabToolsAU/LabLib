@@ -9,11 +9,19 @@
 #include <MCP3008.h>
 
 
-// define pin connections
+// define pin connections for the arduino uno:
 #define CS_PIN 13
 #define CLOCK_PIN 10
 #define MOSI_PIN 12
 #define MISO_PIN 11
+
+// define pin connections for the wemos D1 mini:
+/*
+#define CS_PIN D7
+#define CLOCK_PIN D6
+#define MOSI_PIN D5
+#define MISO_PIN D0
+*/
 
 // put pins inside MCP3008 constructor
 MCP3008 adc(CLOCK_PIN, MOSI_PIN, MISO_PIN, CS_PIN);
