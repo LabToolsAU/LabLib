@@ -1,7 +1,7 @@
 ADC_MCP3008
 ===========
 
-The MCP2008 is an 8 channel 10bit analog to digital converter. Use it to sample analog signals from eg. flex sensors or LDRs (coupled as voltage dividers)
+The MCP3008 is an 8 channel 10bit analog to digital converter. Use it to sample analog signals from eg. flex sensors or LDRs (coupled as voltage dividers)
 
 Why?
 ====
@@ -31,3 +31,8 @@ Hooking up Sensors?
 ===================
 
 Most sensors that rely on a change in resistance need to be coupled as voltage dividers to work with an ADC. Have a look at the [FSR readme](../FSR/README.md) for a nice example.
+
+BONUS
+=====
+[MCP3008 Datasheet](https://stevieb9.github.io/rpi-adc-mcp3008/datasheet/MCP3008.pdf)
+[Purchase an MCP3008 from farnell](http://dk.farnell.com/microchip/mcp3008-i-p/10bit-adc-2-7v-8ch-spi-16dip/dp/1627174)
