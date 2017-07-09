@@ -1,11 +1,11 @@
 Ticker
 ======
 
-'''ONLY AVAILABLE FOR THE ESP8266 based boards (wemos, nodeMCU, etc). Does not compile for avr based arduinos like the UNO)'''
+__ONLY AVAILABLE FOR THE ESP8266 based boards (wemos, nodeMCU, etc). Does not compile for avr based arduinos like the UNO)__
 
 Allows you to define functions to be run at specific intervals, regardless of what the rest of the code is doing.
 
-'''From the example code:''' Ticker is an object that will call a given function with a certain period.
+__From the example code:__ Ticker is an object that will call a given function with a certain period.
 
 Each Ticker calls one function. You can have as many Tickers as you like, memory being the only limitation.
   
