@@ -1,6 +1,6 @@
 # Lab Lib player
 
-##About this library
+## About this library
 LabLib Player is a wrapper class for the [Adafruit_VS1053_FilePlayer](https://github.com/adafruit/Adafruit_VS1053_Library).
 
 It configures the arduino pins to only use the ["Music maker edition"](https://www.adafruit.com/product/1788) of the board and hides a lot of functions that are not needed. Futhermore it supports dividing the music into genres and manipulation of treble and bass.
@@ -9,7 +9,7 @@ Internally it uses an extended version of the Adafruit_VS1053 library. Some of t
 
 All the music files in this library is pieces of tracks downloaded from [Free Music Archive](http://freemusicarchive.org)
 
-##Setup
+## Setup
 In order to make the setup as easy as possible, all the required .cpp and .h files (including the Adafruit_VS1053_FilePlayer) are placed along side the example .ino files. This also means that no libraries needs to be installed in order to use the code from the Arduino IDE.
 
 ** Follow the steps below to get the example code running **
