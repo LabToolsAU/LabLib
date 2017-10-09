@@ -12,7 +12,7 @@ All the music files in this library is pieces of tracks downloaded from [Free Mu
 ## Setup
 In order to make the setup as easy as possible, all the required .cpp and .h files (including the Adafruit_VS1053_FilePlayer) are placed along side the example .ino files. This also means that no libraries needs to be installed in order to use the code from the Arduino IDE.
 
-** Follow the steps below to get the example code running **
+__Follow the steps below to get the example code running__
 
 1. Press the "Clone or download" button above and download a .zip archive with these files,
 1. Copy the files from the directory "SD card files" to the root of a micro SD card
