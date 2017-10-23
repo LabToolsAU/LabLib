@@ -9,7 +9,7 @@ MedianFilter mf(5, 0); //a window of 5 values, all starting at value 0.
 //we can also choose to use an exponential moving average filter (or use both) to smooth incoming data and reject noise. 
 //get the library here: https://github.com/sofian/MovingAverage (unzip in your arduino libraries folder)
 #include <MovingAverage.h>
-MovingAverage exp(0.1f); //new values are weigted at 0.1 (10%)
+MovingAverage ma(0.1f); //new values are weigted at 0.1 (10%)
 
 
 
@@ -31,14 +31,14 @@ void setup() {
   
    for(int i=0; i<5; i++) mf.in(analogRead(adcPin));  //fill the median filter with ADC measurements (runs 5 times).
 
-   	exp.reset(mf.out());  //Initialize the average with the filtered value from the median filter.
+   	ma.reset(mf.out());  //Initialize the average with the filtered value from the median filter.
 }
 
 void loop() {
 
 	mf.in(analogRead(adcPin)); //pull a value from the ADC pin and merge into the median filter.
 
-	ADCfiltered=exp.update(mf.out()); //get the median from the median filter and feed it to the exponential filter
+	ADCfiltered=ma.update(mf.out()); //get the median from the median filter and feed it to the exponential filter
 
 	vADC=adcMAXvoltage/(float)1023*(float)ADCfiltered; //ADC -> voltage
 
