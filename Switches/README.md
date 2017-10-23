@@ -1,7 +1,7 @@
 
 #Switches#
 
-As there is so many types of switches we are not going to cover all of them here. For a quick introduction to the different types see: (https://learn.sparkfun.com/tutorials/switch-basics)
+As there is so many types of switches we are not going to cover all of them here. For a quick introduction to the different types see: https://learn.sparkfun.com/tutorials/switch-basics
 
 There are multiple uses of switches. Each with different advantages and downsides.
 
@@ -16,7 +16,7 @@ You can also with some logic get the switches to only be activated on certain co
 
 ##Switch libraries## 
 
-Sometime we want to do more complicated stuff with switches. For this we can exploit the --POWER OF ABSTRACTION-- and use a library.
+Sometime we want to do more complicated stuff with switches. For this we can exploit the **POWER OF ABSTRACTION** and use a library.
 
 ###Onebutton###
 (https://github.com/mathertel/OneButton)
