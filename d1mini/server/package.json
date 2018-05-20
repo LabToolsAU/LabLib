@@ -1,0 +1,19 @@
+{
+  "name": "lablib-d1mini-starter",
+  "version": "1.0.0",
+  "description": "D1 mini websocket and server starter project",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "ts-node app/server.ts",
+    "compiled": "node dist/server.js"
+  },
+  "author": "ZEB (sebastian@zebweb.dk)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "@types/express-ws": "^3.0.0",
+    "express": "^4.16.3",
+    "express-ws": "^3.0.0"
+  }
+}
