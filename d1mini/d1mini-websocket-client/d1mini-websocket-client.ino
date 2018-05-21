@@ -45,14 +45,7 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
 void setup() {
     
   Serial.begin(115200);
-  // neopixel magic - dont worry about it right now
-  ws2812fx.init();
-  ws2812fx.setBrightness(100);
-  ws2812fx.setSpeed(200);
-  ws2812fx.setMode(FX_MODE_RAINBOW_CYCLE);
-  ws2812fx.start();
-
-  // much more interresting stuff here - with wifi  
+  // interresting stuff here - with wifi  
 
   // we only need this inside the setup, as its a one-time thing
   WiFiManager wifiManager;
@@ -65,7 +58,8 @@ void setup() {
   * Calling autoConnect("wifiname"); will give the temporary wifi 
   * (if it is created) a name (e.g. 'wifiname').
   * */
-  wifiManager.autoConnect();    
+    wifiManager.autoConnect();    
+    Serial.println("Connected to wifi");
     // from here we should be connected to wifi, so connect to the websocket server
     // server address, port and URL and ?id= parameter to be parsed on the server side
     webSocket.begin("192.168.0.30", 3000, "/websockets?id=d1mini"); 
@@ -75,7 +69,15 @@ void setup() {
 
     // if connection is ever lost, we will attempt to reconnect to the 
     // server with the reconnect interval
-    webSocket.setReconnectInterval(RECONNECT_INTERVAL);
+    webSocket.setReconnectInterval(5000);
+    Serial.println("Socket connected, initiating loop!");
+
+      // neopixel magic - dont worry about it right now
+    ws2812fx.init();
+    ws2812fx.setBrightness(100);
+    ws2812fx.setSpeed(200);
+    ws2812fx.setMode(FX_MODE_RAINBOW_CYCLE);
+    ws2812fx.start();
 }
 
 void loop() {
